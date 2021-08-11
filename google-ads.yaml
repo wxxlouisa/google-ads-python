@@ -5,7 +5,7 @@
 # configurations. To obtain a developer token see:                            #
 # https://developers.google.com/google-ads/api/docs/first-call/dev-token      #
 ###############################################################################
-developer_token: INSERT_DEVELOPER_TOKEN_HERE
+developer_token: j-nfA7VE0pTfwamhDfak0A
 
 # OAuth2 configuration
 ###############################################################################
@@ -13,9 +13,9 @@ developer_token: INSERT_DEVELOPER_TOKEN_HERE
 # recommended OAuth2 flow. For more information on authenticating with OAuth2 #
 # see: https://developers.google.com/google-ads/api/docs/oauth/overview       #
 ###############################################################################
-client_id: INSERT_OAUTH2_CLIENT_ID_HERE
-client_secret: INSERT_OAUTH2_CLIENT_SECRET_HERE
-refresh_token: INSERT_REFRESH_TOKEN_HERE
+client_id: 61034761879-vsv0ipbdqv17dhf1nirc3qpk01g0tms8.apps.googleusercontent.com
+client_secret: S1Xcv_Oqk4D2VYmcUsoTGaMC
+refresh_token: 1//0eLUhz3szy8QmCgYIARAAGA4SNwF-L9Irs_BaYkS8QSls4ObtA2sebDJ4TbX3bStKZwvDFciTQnaNbtmtSwtZ-_ZmYZ3eLt9f8lQ
 
 # Service Account configuration
 ###############################################################################
@@ -38,7 +38,7 @@ refresh_token: INSERT_REFRESH_TOKEN_HERE
 # instead of 123-456-7890. You can also specify this later in code if your    #
 # application uses multiple manager account + OAuth pairs.                    #
 ###############################################################################
-login_customer_id: INSERT_LOGIN_CUSTOMER_ID_HERE
+login_customer_id: 7103611805
 
 # Logging configuration
 ###############################################################################
