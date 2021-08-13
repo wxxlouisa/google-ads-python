@@ -1,0 +1,313 @@
+# service gap
+* AccessibleBiddingStrategyService
+    * GetAccessibleBiddingStrategy
+* AccountBudgetProposalService
+    * GetAccoundBudgetProposal
+    * ~~mutate	_account_budget_proposal~~
+* AccountBudgetService
+    * GetAccountBudget
+* AccountLinkService
+    * CreateAccountLink
+    * GetAccountLink
+    * MutateAccountLink (only support remove, can't create)
+* AdGroupAdAssetViewService
+    * GetAdGroupAdAssertView
+* AdGroupAdLabelService
+    * GetAdGroupAdLabel
+    * MutateAdGroupAdLabels
+* AdGroupAdService
+    * GetAdGroupAd
+    * mutate_ad_group_ads
+* AdGroupAssetService
+    * ~~GetAdGroupAsset~~
+    * MutateAdGroupAssets
+* AdGroupAudienceViewService
+    * GetAdGroupAudienceView
+* AdGroupBidModifierService
+    * ~~MutateAdGroupBidModifiers~~
+* AdGroupCriterionLabelService
+    * ~~MutateAdGroupCriterionLabels~~
+* AdGroupCriterionService
+    * ~~MutateAdGroupCriteria~~
+* AdGroupCriterionSimulationService
+    * GetAdGroupCriterionSimulation
+* AdGroupExtensionSettingService
+    * MutateAdGroupExtensionSettings
+* AdGroupFeedService
+    * MutateAdGroupFeeds
+* AdGroupLabelService
+    * MutateAdGroupLabels
+* AdGroupService
+    * ~~MutateAdGroups~~
+* AdGroupSimulationService
+    * GetAdGroupSimulation
+* AdParameterService
+    * ~~MutateAdParameters~~
+* AdScheduleViewService
+    * GetAdScheduleView
+* AdService
+    * ~~MutateAds(Updating ads is not supported for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.)~~
+* AgeRangeViewService
+    * GetAgeRangeView
+* AssetFieldTypeViewService
+    * GetAssetFieldTypeView
+* AssertService
+    * ~~MutateAssets~~
+* BatchJobService
+    * ~~AddBatchJobOperations~~
+    * GetBatchJob
+    * ~~ListBatchJobResults~~
+    * ~~MutateBatchJob~~
+    * ~~RunBatchJob~~
+* BiddingStrategyService
+    * ~~MutateBiddingStrategies~~
+* BiddingStrategySimulationService
+    * GetBiddingStrategySimulation
+* BillingSetupService
+    * ~~MutateBillingSetup~~
+* CampaignAssetService
+    * ~~MutateCampaignAssets~~
+* CampaignAudienceViewService
+    * GetCampaignAudienceView
+* CampaignBidModifierService
+    * ~~MutateCampaignBidModifiers~~
+* CampaignBudgetService
+    * ~~MutateCampaignBudgets~~
+* CampaignCriterionSimulationService
+    * GetCampaignCriterionSimulation
+* CampaignDraftService
+    * ListCampaignDraftAsyncErrors
+    * ~~MutateCampaignDrafts~~
+    * PromoteCampaignDraft
+* CampaignExperimentService
+    * ~~CreateCampaignExperiment~~
+    * EndCampaignExperiment
+    * GetCampaignExperiment
+    * ~~GraduateCampaignExperiment~~
+    * ListCampaignExperimentAsyncErrors
+    * MutateCampaignExperiments
+    * PromoteCampaignExperiment
+* CampaignExtensionSettingService(extensions/add_image_extension)
+    * ~~MutateCampaignExtensionSettings~~
+* CampaignFeedService(add_affiliate_location_extensions.py)
+    * ~~MutateCampaignFeeds~~
+* CampaignLabelService
+    * ~~MutateCampaignLabels~~
+    * ~~MutateCampaigns~~
+* CampaignSharedSetService
+    * ~~MutateCampaignSharedSets~~
+* CampaignSimulationService
+    * GetCampaignSimulation
+* CarrierConstantService
+    * GetCarrierConstant
+* ChangeStatusService
+    * GetChangeStatus
+* ClickViewService
+    * GetClickView
+* CombinedAudienceService
+    * GetCombinedAudience
+* ConversionActionService
+    * MutateConversionActions
+* ConversionAdjustmentUploadService
+    * ~~UploadConversionAdjustments~~
+* ConversionCustomVariableService
+    * MutateConversionCustomVariables
+* ConversionUploadService
+    * ~~UploadCallConversions~~
+    * ~~UploadClickConversions~~
+* ConversionValueRuleService
+    * MutateConversionValueRules
+* ConversionValueRuleSetService
+    * MutateConversionValueRuleSets
+* CurrencyConstantService
+    * GetCurrencyConstant
+* CustomAudienceService
+    * ~~MutateCustomAudiences~~
+* CustomInterestService
+    * MutateCustomInterests
+* CustomerAssetService
+    * MutateCustomerAssets
+* CustomerClientLinkService
+    * ~~MutateCustomerClientLink~~
+* CustomerClientService
+    * GetCustomerClient
+* CustomerExtensionSettingService
+    * ~~MutateCustomerExtensionSettings~~
+* CustomerFeedService
+    * ~~MutateCustomerFeeds~~
+* CustomerLabelService
+    * MutateCustomerLabels
+* CustomerManagerLinkService
+    * MoveManagerLink(Moves a client customer to a new manager customer.)
+    * ~~MutateCustomerManagerLink~~
+* CustomerNegativeCriterionService
+    * ~~MutateCustomerNegativeCriteria~~
+* CustomerService
+    * ~~CreateCustomerClient~~
+    * ~~GetCustomer~~(get_account_information.py)
+    * ~~ListAccessibleCustomers~~(get_account_hierarchy.py)
+    * MutateCustomer
+* CustomerUserAccessInvitationService
+    * GetCustomerUserAccessInvitation
+    * ~~MutateCustomerUserAccessInvitation~~(invite_user_with_access_role.py)
+* CustomerUserAccessService
+    * ~~MutateCustomerUserAccess~~
+* DetailPlacementViewService
+    * GetDetailPlacementView
+* DetailedDemographicService
+    * GetDetailedDemographic
+* DisplayKeywordViewService
+    * GetDisplayKeywordView
+* DistanceViewService
+    * GetDistanceView
+* DomainCategoryService
+    * GetDomainCategory
+* DynamicSearchAdsSearchTermViewService
+    * GetDynamicSearchAdsSearchTermView
+* ExpandedLandingPageViewService
+    * GetExpandedLandingPageView
+* ExtensionFeedItemService
+    * ~~MutateExtensionFeedItems~~
+* FeedItemService
+    * GetFeedItem
+    * ~~MutateFeedItems~~
+* FeedItemSetLinkService
+    * GetFeedItemSetLink
+    * ~~MutateFeedItemSetLinks~~
+* FeedItemSetService
+    * ~~MutateFeedItemSets~~
+* FeedItemTargetService
+    * ~~MutateFeedItemTargets~~
+* FeedMappingService
+    * ~~MutateFeedMappings~~
+* FeedPlaceholderViewService
+    * GetFeedPlaceholderView
+* FeedService
+    * ~~MutateFeeds~~
+* GenderViewService
+    * GetGenderView
+* GeoTargetConstantService
+    * ~~SuggestGeoTargetConstants~~
+* GeographicViewService
+    * GetGeographicView
+* GoogleAdsFieldService
+    * ~~SearchGoogleAdsFields~~
+* GoogleAdsService
+    * ~~Mutate~~(Creates, updates, or removes resources)
+    * ~~Search~~
+    * ~~SearchStream~~
+* GroupPlacementViewService
+    * GetGroupPlacementView
+* HotelGroupViewService
+    * GetHotelGroupView
+* HotelPerformanceViewService
+    * GetHotelPerformanceView
+* IncomeRangeViewService
+    * GetIncomeRangeView
+* InvoiceService
+    * ~~ListInvoices~~
+* KeywordPlanAdGroupKeywordService
+    * GetKeywordPlanAdGroupKeyword
+    * ~~MutateKeywordPlanAdGroupKeywords~~
+* KeywordPlanAdGroupService
+    * ~~MutateKeywordPlanAdGroups~~
+* KeywordPlanCampaignKeywordService
+    * ~~MutateKeywordPlanCampaignKeywords~~
+* KeywordPlanCampaignService
+    * ~~MutateKeywordPlanCampaigns~~
+* KeywordPlanIdeaService
+    * ~~GenerateKeywordIdeas~~
+* KeywordPlanService
+    * GenerateForecastCurve
+    * ~~GenerateForecastMetrics~~
+    * GenerateForecastTimeSeries
+    * GenerateHistoricalMetrics
+    * GetKeywordPlan
+    * ~~MutateKeywordPlans~~
+* KeywordThemeConstantService
+    * GetKeywordThemeConstant
+    * ~~SuggestKeywordThemeConstants~~
+* KeywordViewService
+    * GetKeywordView
+* LabelService
+    * MutateLabels
+* LandingPageViewService
+    * GetLandingPageView
+* LanguageConstantService
+    * GetLanguageConstant
+* LifeEventService
+    * GetLifeEvent
+* LocationViewService
+    * GetLocationView
+* ManagedPlacementViewService
+    * GetManagedPlacementView
+* MediaFileService
+    * ~~MutateMediaFiles~~
+* MerchantCenterLinkService
+    * GetMerchantCenterLink
+    * ~~ListMerchantCenterLinks~~
+    * ~~MutateMerchantCenterLink~~
+* MobileAppCategoryConstantService
+    * GetMobileAppCategoryConstant
+* MobileDeviceConstantService
+    * GetMobileDeviceConstant
+* OfflineUserDataJobService
+    * ~~AddOfflineUserDataJobOperations~~
+    * ~~CreateOfflineUserDataJob~~
+    * GetOfflineUserDataJob
+    * ~~RunOfflineUserDataJob~~
+* OperatingSystemVersionConstantService
+    * GetOperatingSystemVersionConstant
+* PaidOrganicSearchTermViewService
+    * GetPaidOrganicSearchTermView
+* ParentalStatusViewService
+    * GetParentalStatusView
+* PaymentsAccountService(have BillingSetupService)
+    * ListPaymentsAccounts
+* ProductGroupViewService
+    * GetProductGroupView
+* ReachPlanService
+    * ~~GenerateProductMixIdeas~~
+    * ~~GenerateReachForecast~~
+    * ~~ListPlannableLocations~~
+    * ~~ListPlannableProducts~~
+* RecommendationService
+    * ~~ApplyRecommendation~~
+    * ~~DismissRecommendation~~
+    * GetRecommendation
+* RemarketingActionService
+    * ~~MutateRemarketingActions~~
+* SearchTermViewService
+    * GetSearchTermView
+* SharedCriterionService
+    * ~~MutateSharedCriteria~~
+* SharedSetService
+    * ~~MutateSharedSets~~
+* ShoppingPerformanceViewService
+    * GetShoppingPerformanceView
+* SmartCampaignSearchTermViewService
+    * GetSmartCampaignSearchTermView
+* SmartCampaignSettingService
+    * MutateSmartCampaignSettings
+* SmartCampaignSuggestService
+    * SuggestSmartCampaignAd
+    * ~~SuggestSmartCampaignBudgetOptions~~
+* ThirdPartyAppAnalyticsLinkService
+    * GetThirdPartyAppAnalyticsLink
+    * RegenerateShareableLinkId
+* TopicConstantService
+    * GetTopicConstant
+* TopicViewService
+    * GetTopicView
+* UserDataService
+    * UploadUserData 
+* UserInterestService
+    * GetUserInterest
+* UserListService
+    * ~~MutateUserLists~~
+* UserLocationViewService
+    * GetUserLocationView
+* VideoService
+    * GetVideo
+* WebpageViewService
+    * GetWebpageView
