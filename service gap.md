@@ -221,7 +221,7 @@
 * KeywordPlanService
     * GenerateForecastCurve
     * ~~GenerateForecastMetrics~~
-    * GenerateForecastTimeSeries
+    * ~~GenerateForecastTimeSeries~~
     * GenerateHistoricalMetrics
     * GetKeywordPlan
     * ~~MutateKeywordPlans~~
