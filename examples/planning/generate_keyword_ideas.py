@@ -86,7 +86,7 @@ def main(
     keyword_ideas = keyword_plan_idea_service.generate_keyword_ideas(
         request=request
     )
-
+    # return a list of keyword ideas
     for idea in keyword_ideas:
         competition_value = idea.keyword_idea_metrics.competition.name
         print(
@@ -151,6 +151,7 @@ if __name__ == "__main__":
     )
     # To determine the appropriate location IDs, see:
     # https://developers.google.com/google-ads/api/reference/data/geotargets
+    # "9061436","Pudong","Pudong,Shanghai,China","20171","CN","District",Active
     parser.add_argument(
         "-l",
         "--location_ids",
