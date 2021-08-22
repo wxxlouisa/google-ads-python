@@ -1,9 +1,18 @@
+# my operation:
+
+-c 7103611805
+-c 7121419345
+* -i 14060860534
+* ad group id: -a 124760294286
+* Created campaign draft: "customers/7103611805/campaignDrafts/14060860534~281474976710656".
+*
+
 # service gap
 * AccessibleBiddingStrategyService
     * GetAccessibleBiddingStrategy
 * AccountBudgetProposalService
     * GetAccoundBudgetProposal
-    * ~~mutate	_account_budget_proposal~~
+    * ~~mutate_account_budget_proposal~~
 * AccountBudgetService
     * GetAccountBudget
 * AccountLinkService

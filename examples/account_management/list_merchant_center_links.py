@@ -14,13 +14,10 @@
 # limitations under the License.
 """Demonstrates how to approve a Merchant Center link request.
 
-Prerequisite: You need to have access to a Merchant Center account. You can find
-instructions to create a Merchant Center account here:
+Prerequisite: You need to have access to a Merchant Center account. You can find instructions to create a Merchant Center account here:
 https://support.google.com/merchants/answer/188924.
 
-To run this code example, you must use the Merchant Center UI or the Content
-API for Shopping to send a link request between your Merchant Center and Google
-Ads accounts.
+To run this code example, you must use the Merchant Center UI or the Content API for Shopping to send a link request between your Merchant Center and Google Ads accounts.
 """
 
 import argparse
@@ -31,7 +28,7 @@ from google.ads.googleads.errors import GoogleAdsException
 from google.api_core import protobuf_helpers
 
 
-def main(client, customer_id, merchant_center_account_id):
+def main(client, customer_id):
     """Demonstrates how to approve a Merchant Center link request.
 
     Args:
@@ -59,69 +56,13 @@ def main(client, customer_id, merchant_center_account_id):
 
     # Iterate through the results and filter for links with pending statuses.
     for merchant_center_link in response.merchant_center_links:
-        # [START approve_merchant_center_link_1]
+        # [START print merchant_certer_link status]
         print(
             f"Link '{merchant_center_link.resource_name}' has status "
             f"'{merchant_center_link.status.name}'."
         )
-        # [END approve_merchant_center_link_1]
-
-        if (
-            merchant_center_link.status
-            == merchant_center_link_status_enum.PENDING
-            and str(merchant_center_link.id) == merchant_center_account_id
-        ):
-            _update_merchant_center_link_status(
-                client,
-                customer_id,
-                merchant_center_link_service,
-                merchant_center_link,
-                merchant_center_link_status_enum.ENABLED,
-            )
-
-
-# [START approve_merchant_center_link_2]
-def _update_merchant_center_link_status(
-    client,
-    customer_id,
-    merchant_center_link_service,
-    merchant_center_link,
-    status,
-):
-    """Updates the status of a Merchant Center link request.
-
-    Args:
-        client: An initialized GoogleAdsClient instance.
-        customer_id: The client customer ID string.
-        merchant_center_link_service: A merchant center link service instance.
-        merchant_center_link: The merchant center link to be modified.
-        status: The updated status to apply to the merchant center link.
-    """
-    # Creates an operation.
-    operation = client.get_type("MerchantCenterLinkOperation")
-    link_to_update = operation.update
-    link_to_update.resource_name = merchant_center_link.resource_name
-    # Enables the pending link.
-    link_to_update.status = status
-    client.copy_from(
-        operation.update_mask,
-        protobuf_helpers.field_mask(None, link_to_update._pb),
-    )
-
-    # Updates the link.
-    mutate_response = merchant_center_link_service.mutate_merchant_center_link(
-        customer_id=customer_id, operation=operation
-    )
-
-    # Displays the result.
-    print(
-        "The status of Merchant Center Link with resource name "
-        f"'{mutate_response.result.resource_name}' to Google Ads account : "
-        f"{customer_id} was updated to {status.name}."
-    )
-# [END approve_merchant_center_link_2]
-
-
+        # [END print merchant_certer_link status]
+    print("------end of merchant center links------")
 if __name__ == "__main__":
     # GoogleAdsClient will read the google-ads.yaml configuration file in the
     # home directory if none is specified.
@@ -138,19 +79,11 @@ if __name__ == "__main__":
         required=True,
         help="The Google Ads customer ID.",
     )
-    parser.add_argument(
-        "-m",
-        "--merchant_center_account_id",
-        type=str,
-        required=True,
-        help="ID of the Merchant Center account whose link request is to be "
-        "approved.",
-    )
     args = parser.parse_args()
 
     try:
         main(
-            googleads_client, args.customer_id, args.merchant_center_account_id
+            googleads_client, args.customer_id
         )
     except GoogleAdsException as ex:
         print(
