@@ -1,8 +1,14 @@
 from flask import Flask
 
+# __name__ is a build-in variable that refer to the local python file
+# that you're working with
 app = Flask(__name__)
 
-@app.route("/") #write a python decorator
+@app.route("/")
+def hello_world():
+    return "<h1>World!</h1>"
+
+@app.route("/") # write a python decorator, "/" as the root url of your website
 def index():
     return "it's a web app!"
 
@@ -26,4 +32,4 @@ def register_user():
         return render_template('register_failed.html')
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=2002, debug=True)

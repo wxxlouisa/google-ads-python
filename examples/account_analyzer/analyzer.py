@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Copyright 2020 Google LLC
+# Copyright 2021 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +12,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""Gets the account hierarchy of the given MCC and login customer ID.
+"""Gets the account infomation of the given MCC and login customer.
 
-If you don't specify manager ID and login customer ID, the example will instead
-print the hierarchies of all accessible customer accounts for your
-authenticated Google account. Note that if the list of accessible customers for
-your authenticated Google account includes accounts within the same hierarchy,
-this example will retrieve and print the overlapping portions of the hierarchy
-for each accessible customer.
 """
 
 import argparse
@@ -174,6 +168,9 @@ def _print_account_hierarchy(
                 child_account, customer_ids_to_child_accounts, depth + 1
             )
 
+class CampaignOverviews:
+    def get():
+        print()
 
 if __name__ == "__main__":
     # GoogleAdsClient will read the google-ads.yaml configuration file in the

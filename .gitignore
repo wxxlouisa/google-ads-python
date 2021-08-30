@@ -36,3 +36,6 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+examples/account_management/list_merchant_center_links.py
+examples/account_management/get_account_link.py
+examples/account_management/list_merchant_center_links.py

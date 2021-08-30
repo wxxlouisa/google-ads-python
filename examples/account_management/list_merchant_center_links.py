@@ -12,7 +12,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""Demonstrates how to approve a Merchant Center link request.
+"""Demonstrates how to list Merchant Center links.
 
 Prerequisite: You need to have access to a Merchant Center account. You can find instructions to create a Merchant Center account here:
 https://support.google.com/merchants/answer/188924.
