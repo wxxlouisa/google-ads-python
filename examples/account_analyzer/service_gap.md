@@ -1,5 +1,6 @@
 This file is to summarize how many services the current code example has covered
 
+----
 * AccessibleBiddingStrategyService
     * GetAccessibleBiddingStrategy
 * AccountBudgetProposalService
