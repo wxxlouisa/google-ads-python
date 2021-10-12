@@ -1,15 +1,4 @@
-# my operation:
-
--c 7103611805
--c 7121419345
--c 9211913182
--c 7269917197
--i 14060860534
-* ad group id: -a 124760294286
-* Created campaign draft: "customers/7103611805/campaignDrafts/14060860534~281474976710656".
-*
-
-# service gap
+# This file is to summarize how many services the current code example has covered
 * AccessibleBiddingStrategyService
     * GetAccessibleBiddingStrategy
 * AccountBudgetProposalService
